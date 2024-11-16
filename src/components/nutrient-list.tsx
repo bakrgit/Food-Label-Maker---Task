@@ -16,7 +16,7 @@ interface NutrientListProps {
 }
 
 const NutrientList: React.FC<NutrientListProps> = ({ nutrients }) => {
-    const { i18n, t } = useTranslation();
+    const { i18n } = useTranslation();
 
     // Group nutrients by section and sort them
     const groupedNutrients = nutrients.reduce((acc: any, nutrient) => {

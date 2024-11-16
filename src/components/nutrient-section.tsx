@@ -20,7 +20,7 @@ const NutrientSection: React.FC<NutrientSectionProps> = ({ nutrient }) => {
     const {
         name = "Unknown Nutrient",
         value = 0,
-        unit  = "g",
+        // unit  = "g",
         daily_value = 1,
         indentations = 0,
     } = nutrient;
@@ -30,7 +30,7 @@ const NutrientSection: React.FC<NutrientSectionProps> = ({ nutrient }) => {
             <p className="flex justify-between">
                 <span>{name}</span>
                 <span>
-                    {Math.round(value)} {nutrient?.unit?.name || ""} (
+                    {Math.round(value)} {nutrient?.unit || ""} (
                     {daily_value ? Math.round((value / daily_value) * 100) : 0}%) 
                 </span>
             </p>

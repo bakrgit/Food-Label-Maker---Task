@@ -6,16 +6,18 @@ import { Disclaimer, LabelHeader, NutrientToggle, NutrientList } from './compone
 
 const App: React.FC = () => {
   const { label } = data;
-  const { t, i18n } = useTranslation();
+  const {  i18n } = useTranslation();
 
   const [nutrients, setNutrients] = useState(
-    Object.entries(label.serving).map(([key, value]: any) => ({
+    Object.entries(label.serving).map(([_ , value]: any) => ({
       name: value.name,
       value: value.value,
       unit: value.unit,
       dailyValue: value.daily_value,
       indentations: value.indentations || 0,
       enabled: value.enabled === 1,
+      section: value.section || '',
+      order: value.order || 0,
     }))
   );
 
