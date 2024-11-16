@@ -40,7 +40,7 @@ Ensure you have the following installed:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/bakrgit/Food-Label-Maker---Task.git
-   cd nutrition-facts-label
+   cd Food-Label-Maker---Task
   
 
 ### install
