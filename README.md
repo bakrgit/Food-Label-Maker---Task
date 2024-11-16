@@ -39,7 +39,7 @@ Ensure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/nutrition-facts-label.git
+   git clone https://github.com/bakrgit/Food-Label-Maker---Task.git
    cd nutrition-facts-label
   
 
@@ -55,16 +55,4 @@ yarn dev
 
 
 ---------
-### projetct structure :
-src/
-├── components/
-│   ├── Disclaimer.tsx      # Component to display the disclaimer section.
-│   ├── LabelHeader.tsx     # Displays the header with serving size and calories.
-│   ├── NutrientList.tsx    # Displays the list of nutrients dynamically.
-│   ├── NutrientToggle.tsx  # Checkbox to toggle nutrient visibility.
-├── data/
-│   ├── response.json       # Mock API response with nutrient data.
-├── App.tsx                 # Main application component.
-├── index.css               # Global styles for Tailwind.
-├── main.tsx                # Entry point for React application.
-└── i18n.ts                 # React-i18next language configuration.
+
