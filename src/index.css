@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rtl {
+  font-family: 'Noto Sans Arabic', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  font-family: 'Roboto', sans-serif;
+  direction: ltr;
+  text-align: left;
+}
+
+/* Custom spacing for RTL layout */
+.rtl .nutrient {
+  padding-right: 16px;
+  padding-left: 0;
+}
+
+
+
+/* Global border styles for the entire app */
+.border-black {
+  border-color: black;
+}
+
+.border-thin {
+  border-width: 1px;
+}
+
+.border-thick {
+  border-width: 4px;
+}
+
+.border-thicker {
+  border-width: 8px; /* For thicker borders like Calories separator */
+}
+
+/* Tailored line height and spacing */
+.line-height-1 {
+  line-height: 1;
+}
+
+.line-height-1-5 {
+  line-height: 1.5;
+}
